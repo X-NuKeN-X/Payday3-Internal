@@ -126,4 +126,5 @@ jobs:
           - Build Date: ${{ github.event.head_commit.timestamp }}
           - Commit: ${{ github.sha }}
       env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
